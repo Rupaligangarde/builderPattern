@@ -1,5 +1,3 @@
-package BREAD
-
 enum class BREAD {
-WHITE
+WHITE, BROWN
 }

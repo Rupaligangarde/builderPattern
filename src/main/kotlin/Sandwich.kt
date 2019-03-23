@@ -1,6 +1,3 @@
-import BREAD.BREAD
-import CHEESE.CHEESE
-
 data class Sandwich(
     val breadType: BREAD,
     val cheeseType: CHEESE,
