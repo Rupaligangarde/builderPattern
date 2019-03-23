@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-internal class SandwichMakerTest {
+class SandwichMakerTest {
 
     @Test
     fun `should make club sandwich`() {
@@ -10,7 +10,7 @@ internal class SandwichMakerTest {
         Assertions.assertEquals(CHEESE.CHEDDAR, sandwich.cheeseType)
         Assertions.assertEquals(BREAD.WHITE, sandwich.breadType)
         Assertions.assertEquals(listOf("tomato", "onion"), sandwich.vegetables)
-        Assertions.assertEquals(true, sandwich.hasMeyo)
+        Assertions.assertEquals(true, sandwich.hasMayo)
         Assertions.assertEquals(true, sandwich.isToasted)
         Assertions.assertEquals(true, sandwich.hasMustard)
     }
@@ -22,7 +22,7 @@ internal class SandwichMakerTest {
         Assertions.assertEquals(CHEESE.CHEDDAR, sandwich.cheeseType)
         Assertions.assertEquals(BREAD.BROWN, sandwich.breadType)
         Assertions.assertEquals(listOf("tomato", "onion", "cucumber"), sandwich.vegetables)
-        Assertions.assertEquals(true, sandwich.hasMeyo)
+        Assertions.assertEquals(true, sandwich.hasMayo)
         Assertions.assertEquals(true, sandwich.isToasted)
         Assertions.assertEquals(false, sandwich.hasMustard)
     }
