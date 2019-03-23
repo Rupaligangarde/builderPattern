@@ -1,2 +1,5 @@
-package CHEESE 
+package CHEESE
 
+enum class CHEESE {
+    CHEDDAR
+}

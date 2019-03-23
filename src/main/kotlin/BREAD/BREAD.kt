@@ -1,5 +1,5 @@
 package BREAD
 
-enum class BREADTYPE {
+enum class BREAD {
 WHITE
 }
