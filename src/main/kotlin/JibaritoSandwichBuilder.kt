@@ -1,26 +1,14 @@
-class JibaritoSandwichBuilder {
-    fun createSandwich(): Sandwich {
-        val bread = prepareBread()
-        val cheese = addCheese()
-        val veggies = addVeggies()
-        val mayo = isMayo()
-        val toasted = isToasted()
-        val mustard = hasMustard()
+class JibaritoSandwichBuilder: SandwichBuilder() {
 
-        return Sandwich(
-            bread, cheese, mayo, toasted, mustard, veggies
-        )
-    }
+    override fun prepareBread(): BREAD = BREAD.BROWN
 
-    private fun prepareBread(): BREAD = BREAD.BROWN
+    override fun addCheese(): CHEESE = CHEESE.CHEDDAR
 
-    private fun addCheese(): CHEESE = CHEESE.CHEDDAR
+    override fun addVeggies(): List<String> = listOf("tomato", "onion", "cucumber")
 
-    private fun addVeggies(): List<String> = listOf("tomato", "onion", "cucumber")
+    override fun isMayo(): Boolean = true
 
-    private fun isMayo(): Boolean = true
+    override fun isToasted(): Boolean = true
 
-    private fun isToasted(): Boolean = true
-
-    private fun hasMustard(): Boolean = false
+    override fun hasMustard(): Boolean = false
 }
